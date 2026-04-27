@@ -39,8 +39,8 @@ function UploadExercise({ onUploadSuccess, onCancel }) {
       const formData = new FormData();
       formData.append('exercise_name', exerciseName);
       formData.append('video_file', videoFile);
-
-      const response = await fetch('http://localhost:8000/process-exercise', {
+// 'http://localhost:8000/process-exercise'///////////////////////////////////
+      const response = await fetch('https://anyfitcoach.onrender.com/process-exercise', {
         method: 'POST',
         body: formData,
       });

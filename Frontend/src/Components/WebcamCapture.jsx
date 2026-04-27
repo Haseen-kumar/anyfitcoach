@@ -224,7 +224,8 @@ function WebcamCapture({ exerciseName }) {
 
       try {
         addDebug(` Loading blueprint: ${exerciseName}`);
-        const response = await fetch(`http://localhost:8000/exercise/${exerciseName}`);
+        // const response = await fetch(`http://localhost:8000/exercise/${exerciseName}`);//////////////////////////////
+        const response = await fetch(`https://anyfitcoach.onrender.com/exercise/${exerciseName}`);
         if (!response.ok) {
           throw new Error(`Blueprint fetch failed (${response.status})`);
         }

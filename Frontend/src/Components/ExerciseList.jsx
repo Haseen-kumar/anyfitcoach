@@ -43,7 +43,8 @@ function ExerciseList({ onSelectExercise, onUploadNew }) {
     if (!window.confirm(`Delete exercise "${exerciseName}"?`)) return;
 
     try {
-      const response = await fetch(`http://localhost:8000/exercise/${exerciseName}`, {
+      // const response = await fetch(`http://localhost:8000/exercise/${exerciseName}`, {//////////////////
+      const response = await fetch(`https://anyfitcoach.onrender.com/exercise/${exerciseName}`, {
         method: 'DELETE',
       });
 
