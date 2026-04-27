@@ -5,7 +5,8 @@ python-multipart==0.0.17
 
 # Computer Vision
 opencv-python==4.10.0.84
-mediapipe==0.10.14
+# mediapipe==0.10.14
+mediapipe==0.10.35
 
 # Data processing
 numpy==1.26.4
