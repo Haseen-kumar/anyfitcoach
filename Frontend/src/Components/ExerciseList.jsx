@@ -16,7 +16,8 @@ function ExerciseList({ onSelectExercise, onUploadNew }) {
     setError(null);
     
     try {
-      const response = await fetch('http://localhost:8000/exercises');
+      // const response = await fetch('http://localhost:8000/exercises');#for laptop/////////////////////////////////////////////////////
+      const response = await fetch('https://anyfitcoach.onrender.com/exercises');
       if (!response.ok) throw new Error('Failed to fetch exercises');
       
       const data = await response.json();
