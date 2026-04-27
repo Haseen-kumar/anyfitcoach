@@ -1,0 +1,16 @@
+venv/
+anyfit_venv/
+.anyfit_venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+SavedVideo/
+savedJSON/
+
+# Storage folder for uploaded videos and processed angles
+storage/videos/**
+storage/angles/**
+!storage/videos/.gitkeep
+!storage/angles/.gitkeep
